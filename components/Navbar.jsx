@@ -4,14 +4,23 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { motion, AnimatePresence } from "framer-motion";
+import { useState } from "react";
+
 const Navbar = () => {
   const pathname = usePathname();
   const active = "text-primary-color";
 
+  const [isActive, setIsActive] = useState(false);
+
+  const handleActiveMenu = () => {
+    setIsActive((prev) => !prev);
+  };
+
   return (
     <header className="w-full font-mulish shadow fixed">
       <div className="container mx-auto">
-        <div className="flex items-center justify-between gap-10 border-b-1 py-4 text-sm text-[#687693]">
+        <div className="flex items-center justify-between gap-10 border-b-1 py-4 text-sm text-[#687693] max-md:hidden">
           <div className="flex items-center gap-6">
             <p className="">Telephone. Fax.Text: 678-345-0788</p> |{" "}
             <p>Email: info@rosarymakersoa.org</p>
@@ -77,7 +86,7 @@ const Navbar = () => {
         </div>
         <nav className=" px-4 py-6 flex items-center justify-between">
           <div className="font-bold">Logo</div>
-          <div className="flex items-center gap-16">
+          <div className="flex items-center md:gap-16 gap-4 max-md:hidden">
             <ul className="flex items-center gap-10">
               <li className="hover:text-primary-color transition-all duration-300">
                 <Link href="/" className={`${pathname === "/" ? active : ""}`}>
@@ -107,6 +116,78 @@ const Navbar = () => {
             </button>
           </div>
         </nav>
+        <AnimatePresence>
+          <motion.div
+            initial={{ y: 10 }}
+            animate={{ y: 0 }}
+            exit={{ y: 10 }}
+            transition={{ duration: 0.3 }}
+            className=" p-4 bg-slate-700 md:hidden"
+          >
+            <div className="flex justify-end">
+              <button
+                type="button"
+                onClick={handleActiveMenu}
+                className="flex items-center gap-2 bg-black px-4 py-2 rounded-lg text-white"
+              >
+                <span>Menu</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-7"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+            <AnimatePresence>
+              {isActive && (
+                <motion.div
+                  initial={{ y: 20 }}
+                  animate={{ y: 0 }}
+                  exit={{ y: 20 }}
+                  transition={{ duration: 0.3 }}
+                  className=""
+                >
+                  <ul className="flex flex-col gap-3 text-white">
+                    <li className="hover:text-primary-color transition-all duration-300">
+                      <Link
+                        href="/"
+                        className={`${pathname === "/" ? active : ""}`}
+                      >
+                        Home
+                      </Link>
+                    </li>
+
+                    <li className="hover:text-primary-color transition-all duration-300">
+                      <Link
+                        href="/about"
+                        className={`${pathname === "/about" ? active : ""}`}
+                      >
+                        About
+                      </Link>
+                    </li>
+                    <li className="hover:text-primary-color transition-all duration-300">
+                      <Link
+                        href="/contact"
+                        className={`${pathname === "/contact" ? active : ""}`}
+                      >
+                        Contact
+                      </Link>
+                    </li>
+                  </ul>
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        </AnimatePresence>
       </div>
     </header>
   );
