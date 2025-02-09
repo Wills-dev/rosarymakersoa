@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import DonateButton from "./DonateButton";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -18,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full font-mulish shadow fixed">
+    <header className="w-full font-mulish shadow fixed z-50 backdrop-blur">
       <div className="container mx-auto">
         <div className="flex items-center justify-between gap-10 border-b-1 py-4 text-sm text-[#687693] max-md:hidden">
           <div className="flex items-center gap-6">
@@ -84,7 +85,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        <nav className=" px-4 py-6 flex items-center justify-between">
+        <nav className=" px-4 py-6 flex items-center justify-between bg-white">
           <div className="font-bold">Logo</div>
           <div className="flex items-center md:gap-16 gap-4 max-md:hidden">
             <ul className="flex items-center gap-10">
@@ -111,9 +112,7 @@ const Navbar = () => {
                 </Link>
               </li>
             </ul>
-            <button className="bg-primary-color py-3 px-8 text-white hover:bg-green-600  transition-all duration-300">
-              Donate
-            </button>
+            <DonateButton />
           </div>
         </nav>
         <AnimatePresence>
@@ -147,46 +146,46 @@ const Navbar = () => {
                 </svg>
               </button>
             </div>
-            <AnimatePresence>
-              {isActive && (
-                <motion.div
-                  initial={{ y: 20 }}
-                  animate={{ y: 0 }}
-                  exit={{ y: 20 }}
-                  transition={{ duration: 0.3 }}
-                  className=""
-                >
-                  <ul className="flex flex-col gap-3 text-white">
-                    <li className="hover:text-primary-color transition-all duration-300">
-                      <Link
-                        href="/"
-                        className={`${pathname === "/" ? active : ""}`}
-                      >
-                        Home
-                      </Link>
-                    </li>
-
-                    <li className="hover:text-primary-color transition-all duration-300">
-                      <Link
-                        href="/about"
-                        className={`${pathname === "/about" ? active : ""}`}
-                      >
-                        About
-                      </Link>
-                    </li>
-                    <li className="hover:text-primary-color transition-all duration-300">
-                      <Link
-                        href="/contact"
-                        className={`${pathname === "/contact" ? active : ""}`}
-                      >
-                        Contact
-                      </Link>
-                    </li>
-                  </ul>
-                </motion.div>
-              )}
-            </AnimatePresence>
           </motion.div>
+        </AnimatePresence>
+        <AnimatePresence>
+          {isActive && (
+            <motion.div
+              initial={{ y: -20 }}
+              animate={{ y: 0 }}
+              exit={{ y: -20 }}
+              transition={{ duration: 0.3 }}
+              className="p-4 bg-slate-700 md:hidden"
+            >
+              <ul className="flex flex-col gap-3 text-white">
+                <li className="hover:text-primary-color transition-all duration-300">
+                  <Link
+                    href="/"
+                    className={`${pathname === "/" ? active : ""}`}
+                  >
+                    Home
+                  </Link>
+                </li>
+
+                <li className="hover:text-primary-color transition-all duration-300">
+                  <Link
+                    href="/about"
+                    className={`${pathname === "/about" ? active : ""}`}
+                  >
+                    About
+                  </Link>
+                </li>
+                <li className="hover:text-primary-color transition-all duration-300">
+                  <Link
+                    href="/contact"
+                    className={`${pathname === "/contact" ? active : ""}`}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </motion.div>
+          )}
         </AnimatePresence>
       </div>
     </header>
