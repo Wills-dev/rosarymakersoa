@@ -70,10 +70,10 @@ const JoinUs = () => {
               </div>{" "}
             </div>
             <div className="w-full">
-              <div className="bg-join-us h-[40vh] w-full bg-no-repeat bg-cover relative bg-fixed bg-[50%] flex items-center">
+              <div className="bg-join-us h-[40vh] w-full bg-no-repeat bg-cover relative bg-fixed bg-[50%] flex items-center my-10">
                 <div className="absolute w-full h-full top-0 left-0 bg-primary-color opacity-75" />
-                <div className="flex sm:items-center justify-between z-10 sm:px-10 px-6 w-full max-sm:flex-col">
-                  <p className="text-white text-4xl font-semibold  leading-normal">
+                <div className="flex sm:items-center justify-between z-10 sm:px-10 px-6 w-full max-sm:flex-col gap-4">
+                  <p className="text-white sm:text-4xl text-xl font-semibold leading-normal">
                     Lets Chenge The World <br /> With Humanity
                   </p>
                   <Link

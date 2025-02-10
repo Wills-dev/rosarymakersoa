@@ -8,7 +8,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-6 gap-12">
             <div className="md:col-span-3 col-span-6">
               <h6 className="font-semibold text-primary-color capitalize text-lg">
-                About our foundetion
+                About our foundation
               </h6>
               <h2 className="sm:text-5xl text-2xl py-6 text-[#002d5b] font-bold max-w-xl sm:leading-normal capitalize">
                 Work with Purpose, Serve with Love.
