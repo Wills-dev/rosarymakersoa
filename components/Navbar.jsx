@@ -87,13 +87,15 @@ const Navbar = () => {
         </div>
         <nav className=" px-4 py-6 flex items-center justify-between bg-white">
           <div className="font-bold">
-            <Image
-              src="/assets/images/RMOA-Logo.png"
-              width={140}
-              height={80}
-              alt="logo"
-              className=" object-contain"
-            />
+            <Link href="/">
+              <Image
+                src="/assets/images/RMOA-Logo.png"
+                width={140}
+                height={80}
+                alt="logo"
+                className=" object-contain"
+              />
+            </Link>
           </div>
           <div className="flex items-center md:gap-16 gap-4 max-md:hidden">
             <ul className="flex items-center gap-10 text-[#64676c]">
