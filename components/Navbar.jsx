@@ -86,10 +86,18 @@ const Navbar = () => {
           </div>
         </div>
         <nav className=" px-4 py-6 flex items-center justify-between bg-white">
-          <div className="font-bold">Logo</div>
+          <div className="font-bold">
+            <Image
+              src="/assets/images/RMOA-Logo.png"
+              width={140}
+              height={80}
+              alt="logo"
+              className=" object-contain"
+            />
+          </div>
           <div className="flex items-center md:gap-16 gap-4 max-md:hidden">
-            <ul className="flex items-center gap-10">
-              <li className="hover:text-primary-color transition-all duration-300">
+            <ul className="flex items-center gap-10 text-[#64676c]">
+              <li className="hover:text-primary-color  transition-all duration-300">
                 <Link href="/" className={`${pathname === "/" ? active : ""}`}>
                   Home
                 </Link>
