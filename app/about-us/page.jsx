@@ -6,7 +6,7 @@ const AboutUss = () => {
   return (
     <main className="relative min-h-screen">
       <Navbar />
-      <div className="absolute -left-20 top-[16%] w-44 h-40">
+      <div className="absolute -left-20 top-[16%] w-44 h-40 max-sm:hidden">
         <Image
           src="/assets/images/Group8.png"
           height={70}
@@ -15,7 +15,7 @@ const AboutUss = () => {
           className="w-full h-full"
         />
       </div>
-      <div className="absolute -right-20 top-[16%] w-44 h-40">
+      <div className="absolute -right-20 top-[16%] w-44 h-40 max-sm:hidden">
         <Image
           src="/assets/images/Group8.png"
           height={70}
