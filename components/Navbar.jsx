@@ -108,7 +108,7 @@ const Navbar = () => {
               <li className="hover:text-primary-color transition-all duration-300">
                 <Link
                   href="/about-us"
-                  className={`${pathname === "/about" ? active : ""}`}
+                  className={`${pathname === "/about-us" ? active : ""}`}
                 >
                   About
                 </Link>
@@ -180,7 +180,7 @@ const Navbar = () => {
                 <li className="hover:text-primary-color transition-all duration-300">
                   <Link
                     href="/about-us"
-                    className={`${pathname === "/about" ? active : ""}`}
+                    className={`${pathname === "/about-us" ? active : ""}`}
                   >
                     About
                   </Link>
