@@ -42,13 +42,7 @@ const AboutUs = () => {
               </div>
             </div>{" "}
             <div className="md:col-span-3 col-span-6 flex items-center">
-              <Image
-                src="/assets/images/RMOA-01.png"
-                width={120}
-                height={250}
-                alt="helping"
-                className="w-full object-contain"
-              />
+              <div className="w-full md:h-full h-96 bg-no-repeat bg-cover bg-center bg-about-us" />
             </div>
           </div>
         </div>

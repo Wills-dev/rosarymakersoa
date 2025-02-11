@@ -6,24 +6,6 @@ const AboutUss = () => {
   return (
     <main className="relative min-h-screen">
       <Navbar />
-      <div className="absolute -left-20 top-[16%] w-44 h-40 max-sm:hidden">
-        <Image
-          src="/assets/images/Group8.png"
-          height={70}
-          width={120}
-          alt="dots"
-          className="w-full h-full"
-        />
-      </div>
-      <div className="absolute -right-20 top-[16%] w-44 h-40 max-sm:hidden">
-        <Image
-          src="/assets/images/Group8.png"
-          height={70}
-          width={120}
-          alt="dots"
-          className="w-full h-full"
-        />
-      </div>
       <section className="w-full min-h-screen pt-32">
         <div className="flex justify-center py-28">
           <h1 className="text-[#002d5b] font-bold sm:text-6xl text-4xl font-mulish">
@@ -304,7 +286,73 @@ const AboutUss = () => {
                   to serve all special need young adults (ie young adults with
                   developmental disability).
                 </p>
+                <p className="leading-8">
+                  At twenty-one he graduated out of a two-year post-secondary
+                  school program in our county called Strive and could not
+                  proceed any further. Ikenna has grown into a strong, healthy,
+                  well-adjusted, kind, gentle and loving young man. He is most
+                  beloved by his friends and family. He is a source of great joy
+                  to me and my wife. His older siblings love him greatly and are
+                  very protective of him. Since he has been making rosary with
+                  us in the quiet of our home since he was ten years old, we
+                  reasoned this could be his “day job” and would like his peers
+                  to join. Hence the Rosary Makers of America, Inc
+                </p>
+                <p className="leading-8">
+                  At twenty-one he graduated out of a two-year post-secondary
+                  school program in our county called Strive and could not
+                  proceed any further. Ikenna has grown into a strong, healthy,
+                  well-adjusted, kind, gentle and loving young man. He is most
+                  beloved by his friends and family. He is a source of great joy
+                  to me and my wife. His older siblings love him greatly and are
+                  very protective of him. Since he has been making rosary with
+                  us in the quiet of our home since he was ten years old, we
+                  reasoned this could be his “day job” and would like his peers
+                  to join. Hence the Rosary Makers of America, Inc
+                </p>
+                <p className="leading-8">
+                  Spreading the joyful pride and dignity of honest human labor:
+                  The Rosary Makers of America is a workplace where our special
+                  needs young adults can come and learn to make rosaries of the
+                  highest quality. A place to go daily to craft one of the most
+                  sacred, powerful and beloved instruments of prayer in
+                  Christendom. And in so doing enjoy, like the rest of humanity
+                  the beauty and the dignity of honest human labor. Thus,
+                  fulfilling man’s singular and most important calling, which is
+                  to know his Creator, to love Him, to serve Him and his fellow
+                  man in work and to be with Him in eternal bliss in the world
+                  to come.
+                </p>
+                <p className="leading-8">
+                  A labor of love that calls for all hands to be on deck: The
+                  Rosary Makers of America is a labor of love that calls for all
+                  hands to be on deck. Would you lend us yours? Please call us,
+                  make a donation, volunteer for us and above all, pray for us.
+                </p>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-4 py-28">
+          <div className="grid grid-cols-4 grid-rows-4 gap-4  min-h-[80vh]">
+            <div className="sm:col-span-2 col-span-4 sm:row-span-2">
+              <div className="w-full h-96 bg-no-repeat bg-cover bg-center bg-gallery-img" />
+              <p className="text-xl font-light text-[#002d5b]  text-center">
+                Ikenna at High School Graduation
+              </p>
+            </div>
+            <div className="flex-1 w-full sm:col-span-2 col-span-4 sm:row-span-4">
+              <div className="w-full h-[80%] bg-no-repeat bg-cover bg-center bg-gallery-img3" />
+              <p className="text-xl font-light text-[#002d5b]  text-center">
+                An evening with Mum and Dad at the Coca Cola museum Centennial
+                Park, Atlanta, Georgia
+              </p>
+            </div>
+            <div className="sm:col-span-2 col-span-4 sm:row-span-2">
+              <div className="w-full h-96 bg-no-repeat bg-cover bg-center bg-gallery-img2" />
+              <p className="text-xl font-light text-[#002d5b]  text-center">
+                Xmas With sibs Mum and Dad
+              </p>
             </div>
           </div>
         </div>
