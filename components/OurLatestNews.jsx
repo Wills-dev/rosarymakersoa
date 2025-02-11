@@ -16,8 +16,8 @@ const OurLatestNews = () => {
                 Rosary making is a joyful labor of love
               </h2>
             </div>
-            <div className="grid grid-cols-7 grid-rows-2 w-full gap-1 h-[60vh]">
-              <div className="col-span-3 row-span-1">
+            <div className="grid grid-cols-7 md:grid-rows-2 grid-rows-3 w-full gap-1 md:h-[60vh] h-screen">
+              <div className="md:col-span-3 col-span-7 row-span-1">
                 <Image
                   src="/assets/images/rmoa2.jpeg"
                   width={200}
@@ -26,7 +26,7 @@ const OurLatestNews = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="col-span-2 row-span-1">
+              <div className="md:col-span-2 col-span-4 row-span-1">
                 <Image
                   src="/assets/images/gallery-3.jpg"
                   width={200}
@@ -35,7 +35,7 @@ const OurLatestNews = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="col-span-2 row-span-2">
+              <div className="md:col-span-2 col-span-3 row-span-2">
                 <Image
                   src="/assets/images/gallery-4.jpg"
                   width={200}
@@ -44,7 +44,7 @@ const OurLatestNews = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="col-span-2 row-span-1">
+              <div className="md:col-span-2 col-span-4 row-span-1">
                 <Image
                   src="/assets/images/RMOA.jpg"
                   width={200}
@@ -53,7 +53,7 @@ const OurLatestNews = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="col-span-3 row-span-1">
+              <div className="md:col-span-3 col-span-7 row-span-1">
                 <Image
                   src="/assets/images/rmoa1-2.jpg"
                   width={200}
