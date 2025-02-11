@@ -30,6 +30,7 @@ module.exports = {
       },
       backgroundImage: {
         "join-us": "url('/assets/images/RMOA-000.png')",
+        "hero-img": "url('/assets/images/RMOA-006.svg')",
       },
     },
   },
