@@ -116,7 +116,7 @@ const Navbar = () => {
               <li className="hover:text-primary-color transition-all duration-300">
                 <Link
                   href="/contact-us-2"
-                  className={`${pathname === "/contact" ? active : ""}`}
+                  className={`${pathname === "/contact-us-2" ? active : ""}`}
                 >
                   Contact
                 </Link>
@@ -188,7 +188,7 @@ const Navbar = () => {
                 <li className="hover:text-primary-color transition-all duration-300">
                   <Link
                     href="/contact-us-2"
-                    className={`${pathname === "/contact" ? active : ""}`}
+                    className={`${pathname === "/contact-us-2" ? active : ""}`}
                   >
                     Contact
                   </Link>
