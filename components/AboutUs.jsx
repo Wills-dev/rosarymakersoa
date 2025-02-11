@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const AboutUs = () => {
@@ -40,6 +41,15 @@ const AboutUs = () => {
                 </Link>
               </div>
             </div>{" "}
+            <div className="md:col-span-3 col-span-6 flex items-center">
+              <Image
+                src="/assets/images/RMOA-01.png"
+                width={120}
+                height={250}
+                alt="helping"
+                className="w-full object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>
