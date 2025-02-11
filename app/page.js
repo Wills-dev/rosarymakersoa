@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen relative">
       <Navbar />
-      <div className="absolute left-0 top-[20%] w-44 h-40">
+      <div className="absolute left-0 top-[20%] w-44 h-40  max-sm:hidden">
         <Image
           src="/assets/images/Group8.png"
           height={70}
@@ -25,7 +25,7 @@ export default function Home() {
       <HeroSection />
       <WhatWeDo />
       <AboutUs />
-      <div className="absolute right-0 top-[60%] w-44 h-40">
+      <div className="absolute right-0 top-[60%] w-44 h-40  max-sm:hidden">
         <Image
           src="/assets/images/Group9.png"
           height={70}

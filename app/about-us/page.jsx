@@ -127,7 +127,7 @@ const AboutUss = () => {
             </div>
           </div>
         </div>
-        <div className="py-28 flex flex-col items-center justify-center gap-12">
+        <div className="py-28 flex flex-col items-center justify-center gap-12 px-4">
           <h2 className="sm:text-5xl text-2xl py-6 text-[#002d5b] font-bold max-w-xl sm:leading-normal capitalize">
             Board of Directors
           </h2>
