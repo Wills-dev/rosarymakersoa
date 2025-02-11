@@ -19,9 +19,9 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full font-mulish shadow fixed z-50 backdrop-blur">
-      <div className="container mx-auto">
-        <div className="flex items-center justify-between gap-10 border-b-1 py-4 text-sm text-[#687693] max-md:hidden">
+    <header className="w-full font-mulish shadow fixed z-50 backdrop-blur bg-gray-200">
+      <div className="">
+        <div className="xl:px-16 max-xl:container max-xl:mx-auto flex items-center justify-between gap-10 border-b-1 py-4 text-sm text-[#687693] max-md:hidden bg-white ">
           <div className="flex items-center gap-6">
             <p className="">Telephone. Fax.Text: 678-345-0788</p> |{" "}
             <p>Email: info@rosarymakersoa.org</p>
@@ -85,7 +85,7 @@ const Navbar = () => {
             </a>
           </div>
         </div>
-        <nav className=" px-4 py-6 flex items-center justify-between bg-white">
+        <nav className="xl:px-16 max-xl:container max-xl:mx-auto px-4 py-6 flex items-center justify-between">
           <div className="font-bold">
             <Link href="/">
               <Image
@@ -131,7 +131,7 @@ const Navbar = () => {
             animate={{ y: 0 }}
             exit={{ y: 10 }}
             transition={{ duration: 0.3 }}
-            className=" p-4 bg-slate-700 md:hidden"
+            className="  p-4 bg-slate-700 md:hidden"
           >
             <div className="flex justify-end">
               <button
@@ -165,7 +165,7 @@ const Navbar = () => {
               animate={{ y: 0 }}
               exit={{ y: -20 }}
               transition={{ duration: 0.3 }}
-              className="p-4 bg-slate-700 md:hidden"
+              className="max-xl:container max-xl:mx-auto p-4 bg-slate-700 md:hidden"
             >
               <ul className="flex flex-col gap-3 text-white">
                 <li className="hover:text-primary-color transition-all duration-300">
