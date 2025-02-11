@@ -30,7 +30,7 @@ const AboutUs = () => {
             About US
           </h1>
         </div>
-        <div className="container mx-auto px-4 py-14">
+        <div className="container mx-auto px-4 pb-28">
           <div className="flex gap-14 max-md:flex-col">
             <div className="flex-1 flex flex-col gap-4 text-[#64676c] sm:text-lg font-light">
               <p className="leading-8">
@@ -73,7 +73,7 @@ const AboutUs = () => {
               />
             </div>
           </div>
-          <div className="flex gap-14 max-md:flex-col-reverse pt-10">
+          <div className="flex md:items-center gap-14 max-md:flex-col-reverse pt-10">
             {" "}
             <div className="flex-1">
               <Image
@@ -99,6 +99,61 @@ const AboutUs = () => {
               </p>
             </div>
           </div>
+        </div>
+        <div className="bg-[#002d5b]">
+          <div className="container mx-auto py-28 px-4">
+            <div className="flex justify-center items-center gap-14 flex-wrap">
+              <div className="w-40 h-40 border-2 border-[#fcb900] rounded-full text-white flex justify-center items-center">
+                <p className="text-center sm:text-xl text-lg font-bold">
+                  Hard Work
+                </p>
+              </div>
+              <div className="w-40 h-40 border-2 border-[#fcb900] rounded-full text-white flex justify-center items-center">
+                <p className="text-center sm:text-xl text-lg font-bold">
+                  Pure Love
+                </p>
+              </div>
+              <div className="w-40 h-40 border-2 border-[#fcb900] rounded-full text-white flex justify-center items-center">
+                <p className="text-center sm:text-xl text-lg font-bold">
+                  Smart Ideas
+                </p>
+              </div>
+              <div className="w-40 h-40 border-2 border-[#fcb900] rounded-full text-white flex justify-center items-center">
+                <p className="text-center sm:text-xl text-lg font-bold">
+                  Good <br />
+                  Decisions
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="py-28 flex flex-col items-center justify-center gap-12">
+          <h2 className="sm:text-5xl text-2xl py-6 text-[#002d5b] font-bold max-w-xl sm:leading-normal capitalize">
+            Board of Directors
+          </h2>
+          <ul className="flex gap-4 flex-col">
+            <li className="font-light text-lg text-[#64676c] text-center">
+              Nicholas Kemdi Ihenacho, MD, President & Chairman
+            </li>
+            <li className="font-light text-lg text-[#64676c] text-center">
+              Bridget I. Ihenacho, Pharm D, Financial Secretary
+            </li>
+            <li className="font-light text-lg text-[#64676c] text-center">
+              Reverend Dr. Paschal Amagba, CMF, Spiritual Advisor
+            </li>
+            <li className="font-light text-lg text-[#64676c] text-center">
+              Ifeanyi Anikpe, PharmD
+            </li>
+            <li className="font-light text-lg text-[#64676c] text-center">
+              Jessie Moreau, M. Ed, Public Activities Advisor
+            </li>
+            <li className="font-light text-lg text-[#64676c] text-center">
+              David Leta, JD, Secretary
+            </li>
+            <li className="font-light text-lg text-[#64676c] text-center">
+              Leo Ovaje, MD, Treasurer
+            </li>
+          </ul>
         </div>
       </section>
       <Footer />
