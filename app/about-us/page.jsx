@@ -1,0 +1,109 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Image from "next/image";
+
+const AboutUs = () => {
+  return (
+    <main className="relative min-h-screen">
+      <Navbar />
+      <div className="absolute -left-20 top-[16%] w-44 h-40">
+        <Image
+          src="/assets/images/Group8.png"
+          height={70}
+          width={120}
+          alt="dots"
+          className="w-full h-full"
+        />
+      </div>
+      <div className="absolute -right-20 top-[16%] w-44 h-40">
+        <Image
+          src="/assets/images/Group8.png"
+          height={70}
+          width={120}
+          alt="dots"
+          className="w-full h-full"
+        />
+      </div>
+      <section className="w-full min-h-screen pt-32">
+        <div className="flex justify-center py-28">
+          <h1 className="text-[#002d5b] font-bold sm:text-6xl text-4xl font-mulish">
+            About US
+          </h1>
+        </div>
+        <div className="container mx-auto px-4 py-14">
+          <div className="flex gap-14 max-md:flex-col">
+            <div className="flex-1 flex flex-col gap-4 text-[#64676c] sm:text-lg font-light">
+              <p className="leading-8">
+                Rosary Makers of America is a 501(c)(3) nonprofit organization
+                founded in the United States of America. More than thirty-five
+                percent of our healthy special needs people who graduate out of
+                the special need High school education in America spend much
+                time at home unemployed and unengaged. They are not in college
+                or university, not in vocational training and have no job or
+                employment. These dire statistics may be the same or worse in
+                various parts of the world.
+              </p>
+              <p className="leading-8">
+                It is this stark and sad reality that is the motive force or
+                impetus for the founding of Rosary Makers of America, Inc.
+              </p>
+              <p className="leading-8">
+                The purpose and goal of Rosary Makers of America is to make or
+                craft the catholic rosaries ( a special string of prayer beads
+                for catholic Christians ) of the highest quality and in so doing
+                be men and women of prayer. Prayer, which is the singular
+                sustaining force of our human existence without which humanity
+                and human existence would have been reduced to dust and ashes.
+              </p>
+              <p className="leading-8">
+                Our Mission is to get our special needs adults gainfully
+                employed. To enrich and improve their lives so they can enjoy
+                the dignity and the beauty of honest human labor. To teach them
+                to do ‘small’ things and ‘big’ things very well with love for
+                the Greater good, that is with a supernatural outlook.
+              </p>
+            </div>
+            <div className="flex-1">
+              <Image
+                src="/assets/images/RMOA-Fist-Bump.jpg"
+                height={270}
+                width={120}
+                alt="dots"
+                className="w-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex gap-14 max-md:flex-col-reverse pt-10">
+            {" "}
+            <div className="flex-1">
+              <Image
+                src="/assets/images/rmoa-22.jpg"
+                height={270}
+                width={120}
+                alt="dots"
+                className="w-full object-cover"
+              />
+            </div>
+            <div className="flex-1 flex flex-col gap-4 text-[#64676c] sm:text-lg font-light">
+              <p className="leading-8">
+                Our Vision and our prayer is that Rosary Makers of America
+                contributes its quota in building a world where all humanity is
+                gainfully employed in love and service to one another and to
+                God, the end of all human endeavors and labor.
+              </p>
+              <p className="leading-8">
+                We invite you to come and be part of the Rosary Makers of
+                America, Inc. family, in one way or the other. Give us a call,
+                come work or volunteer for us, make a financial donation and
+                above all pray for us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <Footer />
+    </main>
+  );
+};
+
+export default AboutUs;
