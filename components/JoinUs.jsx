@@ -17,7 +17,7 @@ const JoinUs = () => {
                 Be a Part of Something Meaningful
               </h2>
             </div>
-            <div className=" w-full max-h-96 h-96 relative aspect-video my-12">
+            <div className=" w-full max-h-96 h-96 relative aspect-video sm:my-12">
               <iframe
                 src="https://player.vimeo.com/video/877740921?dnt=1&app_id=122963"
                 frameborder="0"
@@ -27,7 +27,7 @@ const JoinUs = () => {
                 className="absolute top-0 left-0 w-full h-full"
               ></iframe>
             </div>
-            <div className="grid grid-cols-6 gap-12 py-14">
+            <div className="grid grid-cols-6 gap-12 py-14 max-sm:pt-8">
               <div className="md:col-span-3 col-span-6 flex justify-center">
                 <Image
                   src="/assets/images/Georgia-Bulletin.png"
