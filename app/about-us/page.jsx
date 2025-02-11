@@ -1,8 +1,8 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Footer from "./../..//components/Footer";
+import Navbar from "./../../components/Navbar";
 import Image from "next/image";
 
-const AboutUs = () => {
+const AboutUss = () => {
   return (
     <main className="relative min-h-screen">
       <Navbar />
@@ -161,4 +161,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutUss;

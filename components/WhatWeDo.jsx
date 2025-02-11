@@ -1,6 +1,6 @@
 "use client";
 
-import { whatWeDo } from "@/constants";
+import { whatWeDo } from "../constants";
 
 import AnimatedCards from "./AnimatedCards";
 
