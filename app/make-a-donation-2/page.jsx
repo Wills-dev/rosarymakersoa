@@ -11,7 +11,7 @@ const page = () => {
             Make a Donation!
           </h1>
         </div>
-        <div className="container mx-auto px-4 pb-28 flex justify-center">
+        <div className="padding-x pb-28 flex justify-center">
           <div className="max-w-4xl sm:text-xl text-lg font-light text-[#64676c]">
             <p className=" text-center leading-9">
               Rosary Makers of America is a 501(c)(3) non profit organization.
