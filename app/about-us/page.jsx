@@ -12,7 +12,7 @@ const AboutUss = () => {
             About US
           </h1>
         </div>
-        <div className="container mx-auto px-4 pb-28">
+        <div className="padding-x pb-28">
           <div className="flex gap-14 max-md:flex-col">
             <div className="flex-1 flex flex-col gap-4 text-[#64676c] sm:text-lg font-light">
               <p className="leading-8">
@@ -83,7 +83,7 @@ const AboutUss = () => {
           </div>
         </div>
         <div className="bg-[#002d5b]">
-          <div className="container mx-auto py-28 px-4">
+          <div className="padding-x  py-28">
             <div className="flex justify-center items-center gap-14 flex-wrap">
               <div className="w-40 h-40 border-2 border-[#fcb900] rounded-full text-white flex justify-center items-center">
                 <p className="text-center sm:text-xl text-lg font-bold">
@@ -138,7 +138,7 @@ const AboutUss = () => {
           </ul>
         </div>
         <div className="bg-[#f8fcff]">
-          <div className="container mx-auto px-4 py-28">
+          <div className="padding-x py-28">
             <h2 className="sm:text-5xl text-2xl pb-6 text-[#002d5b] font-bold max-w-xl sm:leading-normal capitalize">
               Our Story
             </h2>
@@ -333,7 +333,7 @@ const AboutUss = () => {
             </div>
           </div>
         </div>
-        <div className="container mx-auto px-4 py-28">
+        <div className="padding-x py-28">
           <div className="grid grid-cols-4 grid-rows-4 gap-4  min-h-[80vh]">
             <div className="sm:col-span-2 col-span-4 sm:row-span-2">
               <div className="w-full h-96 bg-no-repeat bg-cover bg-center bg-gallery-img" />

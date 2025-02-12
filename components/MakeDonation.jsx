@@ -4,7 +4,7 @@ import Link from "next/link";
 const MakeDonation = () => {
   return (
     <section className="min-h-screen w-full">
-      <div className="container mx-auto px-4 py-10 h-full w-full">
+      <div className="padding-x py-10 h-full w-full">
         <div className="flex flex-col gap-16 justify-center items-center min-h-screen">
           <Image
             src="/assets/images/RMOA-D.png"

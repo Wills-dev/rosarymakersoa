@@ -11,7 +11,7 @@ const ContaactUs = () => {
             Contact Us
           </h1>
         </div>
-        <div className="container mx-auto px-4 pb-28 flex justify-center">
+        <div className="padding-x pb-28 flex justify-center">
           <div className="max-w-4xl sm:text-xl text-lg font-light text-[#64676c]"></div>
         </div>
       </section>
