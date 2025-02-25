@@ -110,7 +110,7 @@ const Nav = () => {
             className=" object-contain"
           />
         </Link>
-        <p className=" lg:max-w-3xl  md:max-w-xl max-md:hidden text-primary-brown">
+        <p className=" lg:max-w-lg  md:max-w-xl max-md:hidden text-primary-brown text-sm">
           "God is not removing you from your environment. He is not taking you
           away from the world, or from your condition in life, or from your
           noble human ambitions, or from your professional work ... But he wants

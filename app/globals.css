@@ -28,4 +28,7 @@
   .padding-x {
     @apply max-w-5xl mx-auto lg:px-[4rem] sm:px-[2rem] px-3;
   }
+  .section-bg {
+    @apply border-t-4 border-orange-400 bg-white p-4 border-b-1 border-b-primary-black;
+  }
 }
