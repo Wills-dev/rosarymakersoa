@@ -26,7 +26,10 @@ module.exports = {
         1: "1px",
       },
       colors: {
-        "primary-color": "#0c71c3",
+        "primary-color": "#efede7",
+        "primary-black": "#2e2e2e",
+        "primary-brown": "#6b6864",
+        brown: "#a4a098",
       },
       backgroundImage: {
         "join-us": "url('/assets/images/RMOA-000.png')",
