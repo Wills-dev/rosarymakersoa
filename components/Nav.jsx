@@ -166,7 +166,7 @@ const Nav = () => {
           </motion.div>
         )}
       </AnimatePresence>
-      <nav className="w-full py-4 flex items-center justify-between  gap-4 border-b-1 border-brown max-md:hidden">
+      <nav className="w-full py-4 flex items-center justify-between  gap-4  max-md:hidden">
         <Link href="/" className="text-primary-brown">
           <svg
             xmlns="http://www.w3.org/2000/svg"
