@@ -7,7 +7,7 @@ const OurLatestNews = () => {
         Our Gallery
       </h3>
       <div className="">
-        <div className="grid grid-cols-7 md:grid-rows-2 grid-rows-3 w-full gap-1 md:h-[60vh] h-screen">
+        <div className="grid grid-cols-7 md:grid-rows-2 grid-rows-3 w-full gap-1 md:h-[34rem] h-screen">
           <div className="md:col-span-3 col-span-7 row-span-1">
             <Image
               src="/assets/images/rmoa2.jpeg"
