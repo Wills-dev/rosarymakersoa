@@ -157,8 +157,10 @@ const Nav = () => {
                 href={link?.link}
                 key={link?.link}
                 className={`${
-                  pathname === "/about-us" ? active : ""
-                } text-lg uppercase font-semibold text-brown hover:text-primary-brown transition-all duration-300`}
+                  pathname === link?.link
+                    ? active
+                    : "text-brown hover:text-primary-brown"
+                } text-lg uppercase font-semibold  transition-all duration-300`}
               >
                 {link?.title}
               </motion.a>
@@ -183,8 +185,10 @@ const Nav = () => {
             href={link?.link}
             key={link?.link}
             className={`${
-              pathname === "/about-us" ? active : ""
-            } text-lg uppercase font-semibold text-primary-brown hover:text-primary-black transition-all duration-300`}
+              pathname === link?.link
+                ? active
+                : "text-primary-brown hover:text-primary-black"
+            } text-lg uppercase font-semibold transition-all duration-300`}
           >
             {link?.title}
           </Link>
