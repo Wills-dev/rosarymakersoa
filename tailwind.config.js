@@ -43,6 +43,11 @@ module.exports = {
         "about-us": "url('/assets/images/RMOA-01.png')",
         "join-uss": "url('/assets/images/RMOA-003.jpg')",
         "news-img1": "url('/assets/images/rmoa2.jpeg')",
+        saint1:
+          "url('/assets/images/3st__josemaria_escriva_rosary156768602457.jpg')",
+        saint2: "url('/assets/images/pope john paul.jpg')",
+        saint3: "url('/assets/images/teresa.jpg')",
+        saint4: "url('/assets/images/pio.jpg')",
       },
     },
   },

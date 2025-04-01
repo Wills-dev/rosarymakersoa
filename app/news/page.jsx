@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import MainLayout from "../../components/MainLayout";
 import Prayer from "../../components/Prayer";
+import Link from "next/link";
 
 const page = () => {
   const images = [
@@ -66,6 +67,147 @@ const page = () => {
             </div>
           </div>
           <Prayer />
+          <div className="section-bg text-primary-brown space-y-4">
+            <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
+              Heroes of the Church and true heroes of the world: Lovers of the
+              Rosary
+            </h3>
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-6">
+              <div className="col-span-2 space-y-3">
+                <div className="w-full ">
+                  <Image
+                    src="/assets/images/3st__josemaria_escriva_rosary156768602457.jpg"
+                    width={140}
+                    height={140}
+                    alt="news-images"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <p className="text-lg font-extrabold text-primary-black">
+                  St. Josemaria Escriva
+                </p>
+                <p className="font-bold">
+                  Biography of Saint Josemaria Escriva
+                </p>
+                <p className="pt-1">
+                  A brief biography of the founder of Opus Dei.
+                </p>
+                <p>
+                  Josemaria Escriva was born in Barbastro, Spain on January 9,
+                  1902. He was ordained on March 28, 1925. He studied civil law
+                  along with his ecclesiastical studies, and in 1927, he moved
+                  to Madrid to obtain a doctorate in law. While there, he worked
+                  hard with the poor and sick, and also with students, workers,
+                  and professionals.
+                </p>
+                <Link
+                  href="/st-josemaria-escriva"
+                  className="text-primary-black font-bold underline"
+                >
+                  Read more
+                </Link>
+              </div>
+              <div className="col-span-2 space-y-3">
+                <div className="w-full ">
+                  <Image
+                    src="/assets/images/pope john paul.jpg"
+                    width={140}
+                    height={140}
+                    alt="news-images"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <p className="text-lg font-extrabold text-primary-black">
+                  St. Pope John Paul II
+                </p>
+                <p className="font-bold">BIOGRAPHICAL PROFILE</p>
+                <p className="font-bold">JOHN PAUL II (1920-2005)</p>
+                <p>
+                  KAROL JOZEF WOJTYLA, elected Pope on 16 October 1978, was born
+                  in Wadowice, Poland, on 18 May 1920.
+                </p>
+                <p>
+                  He was the third of three children born to Karol Wojtyla and
+                  Emilia Kaczorowska, who died in 1929. His elder brother
+                  Edmund, a physician, died in 1932, and his father, Karol, a
+                  non-commissioned officer in the army, died in 1941.
+                </p>
+                <Link
+                  href="/st-pope-john-paul-ii"
+                  className="text-primary-black font-bold underline"
+                >
+                  Read more
+                </Link>
+              </div>
+              <div className="col-span-2 space-y-3">
+                <div className="w-full ">
+                  <Image
+                    src="/assets/images/teresa.jpg"
+                    width={140}
+                    height={140}
+                    alt="news-images"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <p className="text-lg font-extrabold text-primary-black">
+                  St. Teresa of Calcutta
+                </p>
+                <p>
+                  <span className="italic">
+                    “By blood, I am Albanian. By citizenship, an Indian. By
+                    faith, I am a Catholic nun. As to my calling, I belong to
+                    the world. As to my heart, I belong entirely to the Heart of
+                    Jesus.”
+                  </span>{" "}
+                  Small of stature, rocklike in faith, Mother Teresa of Calcutta
+                  was entrusted with the mission of proclaiming God’s thirsting
+                  love for humanity, especially for the poorest of the poor.
+                  <span className="italic">
+                    “God still loves the world and He sends you and me to be His
+                    love and His compassion to the poor.”
+                  </span>
+                </p>
+                <Link
+                  href="/st-teresa-of-calcutta"
+                  className="text-primary-black font-bold underline"
+                >
+                  Read more
+                </Link>
+              </div>
+              <div className="col-span-2 space-y-3">
+                <div className="w-full ">
+                  <Image
+                    src="/assets/images/pio.jpg"
+                    width={140}
+                    height={140}
+                    alt="news-images"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <p className="text-lg font-extrabold text-primary-black">
+                  St. Padre Pio
+                </p>
+                <p>
+                  Padre Pio was born on May 25, 1887 in Pietrelcina, southern
+                  Italy. He was tutored privately until his entry to the
+                  novitiate of the Capuchin Friars at the age of 15. Of feeble
+                  health but strong will, with the help of grace, he completed
+                  the required studies and was ordained a priest in 1910.
+                </p>
+                <p>
+                  On September 20, 1918 the five wounds of our Lord’s passion
+                  appeared on his body, making him the first stigmatized priest
+                  in the history of the Catholic Church.
+                </p>
+                <Link
+                  href="/st-pope-john-paul-ii"
+                  className="text-primary-black font-bold underline"
+                >
+                  Read more
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </MainLayout>
