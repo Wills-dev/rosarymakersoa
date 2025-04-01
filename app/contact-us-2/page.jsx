@@ -1,22 +1,25 @@
-import Navbar from "./../../components/Navbar";
-import Footer from "./../../components/Footer";
+import MainLayout from "../../components/MainLayout";
 
 const ContaactUs = () => {
   return (
-    <main className="relative min-h-screen">
-      <Navbar />
-      <section className="w-full min-h-screen pt-32">
-        <div className="flex justify-center py-28">
-          <h1 className="text-[#002d5b] font-bold sm:text-6xl text-4xl font-mulish">
-            Contact Us
-          </h1>
-        </div>
-        <div className="padding-x pb-28 flex justify-center">
-          <div className="max-w-4xl sm:text-xl text-lg font-light text-[#64676c]"></div>
+    <MainLayout>
+      <section className="bg-cream py-6 w-full">
+        <div className="padding-x w-full space-y-6">
+          <div className="section-bg text-primary-brown space-y-4">
+            <h1 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
+              Contact Us
+            </h1>
+            <div className="py-6 space-y-3">
+              <p className="font-extrabold">Rosary Makers of America,</p>
+              <p>2300 W Park Pl. Blvd Ste. 142</p>
+              <p>Stone Mountain, GA 30087</p>
+              <p>Telephone. Fax . Text: 678-345-0788</p>
+              <p>Email: info@rosarymakersoa.org</p>
+            </div>
+          </div>
         </div>
       </section>
-      <Footer />
-    </main>
+    </MainLayout>
   );
 };
 

@@ -1,15 +1,10 @@
-import Link from "next/link";
 import Image from "next/image";
 
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
+import MainLayout from "../../components/MainLayout";
 
 const page = () => {
   return (
-    <main className="min-h-screen w-full bg-primary-color relative">
-      <div className="padding-x w-full">
-        <Nav />
-      </div>
+    <MainLayout>
       <section className="bg-cream py-6 w-full">
         <div className="padding-x w-full space-y-6">
           <div className="section-bg text-primary-brown space-y-4">
@@ -302,8 +297,7 @@ const page = () => {
           </div>
         </div>
       </section>
-      <Footer />
-    </main>
+    </MainLayout>
   );
 };
 
