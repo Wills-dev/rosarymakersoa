@@ -39,6 +39,7 @@ module.exports = {
           "url('/assets/images/Ikena-at-High-School-Graduation.jpg')",
         "gallery-img2": "url('/assets/images/RMOA3.jpg')",
         "gallery-img3": "url('/assets/images/RMOA4.jpg')",
+        "gallery-img4": "url('/assets/images/RMOA2.jpg')",
         "about-us": "url('/assets/images/RMOA-01.png')",
       },
     },

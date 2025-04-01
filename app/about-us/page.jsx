@@ -286,9 +286,9 @@ const page = () => {
               </div>
               <div className="flex flex-wrap max-sm:flex-col gap-6">
                 <div className="flex-1 w-full">
-                  <div className="w-full h-96 bg-no-repeat bg-cover bg-center bg-gallery-img2" />
+                  <div className="w-full h-96 bg-no-repeat bg-cover bg-center bg-gallery-img4" />
                   <p className="text-xl font-light text-[#002d5b]  text-center">
-                    Xmas With sibs Mum and Dad
+                    Ikenna with doting siblings
                   </p>
                 </div>
                 <div className="flex-1 w-full">
