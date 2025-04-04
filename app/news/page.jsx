@@ -200,7 +200,7 @@ const page = () => {
                   in the history of the Catholic Church.
                 </p>
                 <Link
-                  href="/st-pope-john-paul-ii"
+                  href="/st-padre-pio"
                   className="text-primary-black font-bold underline"
                 >
                   Read more
