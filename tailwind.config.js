@@ -34,7 +34,7 @@ module.exports = {
       },
       backgroundImage: {
         "join-us": "url('/assets/images/RMOA-000.png')",
-        "hero-img": "url('/assets/images/RMOA-006.svg')",
+        "hero-img": "url('/assets/images/image-1.jpg')",
         "gallery-img":
           "url('/assets/images/Ikena-at-High-School-Graduation.jpg')",
         "gallery-img2": "url('/assets/images/RMOA3.jpg')",
