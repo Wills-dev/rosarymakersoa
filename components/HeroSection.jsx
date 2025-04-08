@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="absolute left-0 top-0 bg-white w-full h-full opacity-75 z-0 md:hidden" />
           <div className="padding-x h-full flex items-center">
             <div className="max-w-2xl h-full flex flex-col gap-8 justify-center">
-              <h1 className="xl:text-7xl sm:text-5xl text-3xl font-extrabold text-[#002d5b] sm:leading-normal z-10">
+              <h1 className="xl:text-7xl md:text-5xl text-xl font-extrabold text-[#002d5b] sm:leading-normal z-10">
                 Enjoying the Dignity of Honest Human Labor in Rosary Making.
               </h1>
               <p className="text-[#464d65] z-10">
