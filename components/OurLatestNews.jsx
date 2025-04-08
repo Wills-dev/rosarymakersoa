@@ -1,8 +1,20 @@
+"use client";
+
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
+import { subheadingVariants } from "../anim";
 
 const OurLatestNews = () => {
   return (
-    <section className="section-bg">
+    <motion.section
+      variants={subheadingVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      className="section-bg"
+    >
       <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
         Our Gallery
       </h3>
@@ -55,7 +67,7 @@ const OurLatestNews = () => {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 

@@ -1,6 +1,18 @@
+"use client";
+
+import { motion } from "framer-motion";
+
+import { subheadingVariants } from "../anim";
+
 const BePart = () => {
   return (
-    <div className="section-bg">
+    <motion.div
+      variants={subheadingVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      className="section-bg"
+    >
       <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
         Join Us
       </h3>
@@ -23,7 +35,7 @@ const BePart = () => {
           </h6>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

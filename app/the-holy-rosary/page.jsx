@@ -101,7 +101,7 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="section-bg text-primary-brown space-y-4">
+          <div className="section-bg text-primary-brown space-y-4" id="story">
             <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
               The story of the Rosary
             </h3>
@@ -221,7 +221,10 @@ const page = () => {
               rosary is beyond description.”
             </p>
           </div>
-          <div className="section-bg text-primary-brown space-y-4">
+          <div
+            className="section-bg text-primary-brown space-y-4"
+            id="benefits"
+          >
             <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
               Benefits of the Rosary
             </h3>
