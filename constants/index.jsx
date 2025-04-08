@@ -1,3 +1,22 @@
+import Rosary1 from "/public/assets/images/rosary1.jpg";
+import Rosary2 from "/public/assets/images/rosary2.jpg";
+import Rosary3 from "/public/assets/images/rosary3.jpg";
+import Rosary4 from "/public/assets/images/rosary4.jpg";
+import Rosary5 from "/public/assets/images/rosary5.jpg";
+import Rosary6 from "/public/assets/images/rosary6.jpg";
+import Rosary7 from "/public/assets/images/rosary7.jpg";
+import Rosary8 from "/public/assets/images/rosary8.jpg";
+import Rosary9 from "/public/assets/images/rosary9.jpg";
+import Rosary10 from "/public/assets/images/rosary10.jpg";
+import Rosary11 from "/public/assets/images/rosary11.jpg";
+import Rosary12 from "/public/assets/images/rosary12.jpg";
+import Rosary13 from "/public/assets/images/rosary13.jpg";
+import Rosary14 from "/public/assets/images/rosary14.jpg";
+import Rosary15 from "/public/assets/images/rosary15.jpg";
+import Rosary16 from "/public/assets/images/rosary16.jpg";
+import Rosary17 from "/public/assets/images/rosary17.jpg";
+import Rosary18 from "/public/assets/images/rosary18.jpg";
+
 export const whatWeDo = [
   {
     caption: " Crafting Rosaries",
@@ -67,4 +86,25 @@ export const whatWeDo = [
       </svg>
     ),
   },
+];
+
+export const rosaries = [
+  Rosary1,
+  Rosary10,
+  Rosary11,
+  Rosary12,
+  Rosary13,
+  Rosary14,
+  Rosary15,
+  Rosary16,
+  Rosary17,
+  Rosary18,
+  Rosary2,
+  Rosary3,
+  Rosary4,
+  Rosary5,
+  Rosary6,
+  Rosary7,
+  Rosary8,
+  Rosary9,
 ];
