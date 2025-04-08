@@ -40,7 +40,21 @@ const Nav = () => {
 
   return (
     <header className="w-full">
-      <div className="py-2 border-b-1 border-brown flex justify-end max-md:hidden">
+      <div className="py-2 border-b-1 border-brown flex justify-between max-md:hidden">
+        <div className="flex items-center gap-6 text-sm text-primary-black">
+          <Link
+            href="/the-holy-rosary"
+            className="hover:text-primary-brown transition-all duration-300"
+          >
+            The Holy Rosary
+          </Link>
+          <Link
+            href="/our-rosary-makers"
+            className="hover:text-primary-brown transition-all duration-300"
+          >
+            Our Rosary Makers
+          </Link>
+        </div>
         <div className="flex items-center gap-6">
           <a
             href="https://www.facebook.com/rosarymakersoa/"
