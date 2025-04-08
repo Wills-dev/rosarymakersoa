@@ -1,10 +1,22 @@
+"use client";
+
 import Image from "next/image";
+
+import { motion } from "framer-motion";
 
 import AboutImage from "../public/assets/images/Georgia-Bulletin.png";
 
+import { subheadingVariants } from "../anim";
+
 const Prayer = () => {
   return (
-    <div className="section-bg">
+    <motion.div
+      variants={subheadingVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      className="section-bg"
+    >
       <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
         Art, Prayer and Companionship Goals of Rosary Makers
       </h3>
@@ -47,7 +59,7 @@ const Prayer = () => {
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

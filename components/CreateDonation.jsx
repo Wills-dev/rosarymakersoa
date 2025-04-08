@@ -1,11 +1,23 @@
+"use client";
+
+import Link from "next/link";
 import Image from "next/image";
 
+import { motion } from "framer-motion";
+
 import Donate from "../public/assets/images/RMOA-D.png";
-import Link from "next/link";
+
+import { subheadingVariants } from "../anim";
 
 const CreateDonation = () => {
   return (
-    <div className="section-bg">
+    <motion.div
+      variants={subheadingVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+      className="section-bg"
+    >
       <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
         Make a Donation
       </h3>
@@ -35,7 +47,7 @@ const CreateDonation = () => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
