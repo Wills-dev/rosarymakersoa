@@ -13,6 +13,7 @@ const page = () => {
     "/assets/images/news5.jpg",
     "/assets/images/news6.jpg",
   ];
+
   return (
     <MainLayout>
       {" "}
