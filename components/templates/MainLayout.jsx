@@ -4,7 +4,7 @@ const MainLayout = ({ children }) => {
   return (
     <div className="relative">
       <Nav />
-      {children}
+      <main>{children}</main>
     </div>
   );
 };
