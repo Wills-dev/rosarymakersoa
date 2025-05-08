@@ -17,6 +17,11 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      backgroundColor: {
+        "full-transparent": "rgba(0, 0, 0, 0.1)",
+        "half-transparent": "rgba(0, 0, 0, 0.5)",
+        "part-transparent": "rgba(0, 0, 0, 0.9)",
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
