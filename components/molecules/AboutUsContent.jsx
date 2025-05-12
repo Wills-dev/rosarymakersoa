@@ -23,9 +23,7 @@ const AboutUsContent = () => {
         It is this stark and sad reality that is the motive force or impetus for
         the founding of Rosary Makers of America, Inc.
       </motion.p>
-      <motion.div variants={itemVariants}>
-        <CustomButton text="Learn more" href={ROUTES?.ABOUT_US} />
-      </motion.div>
+      <CustomButton text="Learn more" href={ROUTES?.ABOUT_US} />
     </motion.div>
   );
 };

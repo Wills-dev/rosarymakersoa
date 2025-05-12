@@ -10,7 +10,7 @@ const Navbar = ({ toggle }) => {
   return (
     <header className="w-full">
       <div
-        className={`fixed w-full backdrop-blur-xl bg-black transition-transform duration-700 z-10 ${
+        className={`fixed w-full backdrop-blur-xl bg-black transition-transform duration-700 z-20 ${
           visible ? "translate-y-0" : "-translate-y-full"
         } ${isHeightGreaterThanScreen && "shadow"}`}
       >
