@@ -78,12 +78,11 @@ export const Two = {
 
 // Animation variants for the container
 export const containerVariants = {
-  hidden: { opacity: 0 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
+    y: 0,
+    transition: { duration: 0.8, delay: 0.8, ease: "easeOut" },
   },
 };
 
@@ -101,6 +100,19 @@ export const itemVariants = {
 };
 
 // Image animation
+
+export const imageVariants = {
+  hidden: { opacity: 0, scale: 0.3 },
+  visible: {
+    opacity: 1,
+    sacle: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  },
+};
+
 export const imageTwoVariants = (reverse) => {
   return {
     hidden: { opacity: 0, x: reverse ? 100 : -100 },

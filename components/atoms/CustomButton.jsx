@@ -1,4 +1,10 @@
+"use client";
+
 import Link from "next/link";
+
+import { motion } from "framer-motion";
+
+import { itemVariants } from "../../anim";
 
 const CustomButton = ({
   text,
@@ -30,14 +36,23 @@ const CustomButton = ({
       </span>
     </button>
   );
-  return href && externalLink ? (
-    <a href={href} target="_blank" rel="noopener noreferrer">
-      {buttonElement}
-    </a>
-  ) : href ? (
-    <Link href={href}>{buttonElement}</Link>
-  ) : (
-    { buttonElement }
+  return (
+    <motion.div
+      variants={itemVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+    >
+      {href && externalLink ? (
+        <a href={href} target="_blank" rel="noopener noreferrer">
+          {buttonElement}
+        </a>
+      ) : href ? (
+        <Link href={href}>{buttonElement}</Link>
+      ) : (
+        { buttonElement }
+      )}
+    </motion.div>
   );
 };
 
