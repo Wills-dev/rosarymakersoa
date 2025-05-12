@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import MainLayout from "../../components/MainLayout";
+import MainLayout from "../../components/templates/MainLayout";
 
 const page = () => {
   return (
