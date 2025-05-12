@@ -1,6 +1,9 @@
 import Link from "next/link";
-import Logo from "../atoms/Logo";
 import Image from "next/image";
+
+import Logo from "../atoms/Logo";
+
+import { footerLinks } from "../../lib/constants";
 
 const Footer = () => {
   return (
@@ -21,40 +24,26 @@ const Footer = () => {
                 <li className="font-light">Email: info@rosarymakersoa.org</li>
               </ul>
             </div>
-            <div className="md:col-span-2 sm:col-span-3 col-span-6 flex flex-col gap-6">
-              <h6 className="sm:text-xl text-lg  font-medium">Quick Links</h6>
-              <ul className="flex flex-col gap-4 ">
-                <li className="font-light">
-                  <Link href="/">Home</Link>
-                </li>
-                <li className="font-light">
-                  <Link href="/about-us">About us</Link>
-                </li>
-                <li className="font-light">
-                  <Link href="/come-join-us-2">Join us</Link>
-                </li>
-                <li className="font-light">
-                  <Link href="/contact-us-2">Contact us</Link>
-                </li>
-              </ul>
-            </div>
-            <div className="md:col-span-2 sm:col-span-3 col-span-6 flex flex-col gap-6">
-              <h6 className="sm:text-xl text-lg font-medium">Others</h6>
-              <ul className="flex flex-col gap-4">
-                <li className="font-light">
-                  <Link href="/news">News</Link>
-                </li>
-                <li className="font-light">
-                  <Link href="/make-a-donation-2">Donate</Link>
-                </li>
-                <li className="font-light">
-                  <Link href="/the-holy-rosary">The Holy Rosary</Link>
-                </li>
-                <li className="font-light">
-                  <Link href="/our-rosary-makers">Our Rosary markers</Link>
-                </li>
-              </ul>
-            </div>
+            {footerLinks?.map((heading) => (
+              <div
+                key={heading?.heading}
+                className="md:col-span-2 sm:col-span-3 col-span-6 flex flex-col gap-6"
+              >
+                <h6 className="sm:text-xl text-lg  font-medium">
+                  {heading?.heading}
+                </h6>
+                <ul className="flex flex-col gap-4 ">
+                  {heading?.subLinks?.map((link) => (
+                    <li
+                      key={link?.title}
+                      className="font-light hover:text-blue-700 transition-all duration-300 ease-in-out"
+                    >
+                      <Link href={link?.link}>{link?.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </div>
       </div>
