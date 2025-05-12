@@ -67,11 +67,50 @@ export const subheadingVariants = {
 };
 
 // Animation variants for the hero image
-export const imageVariants = {
+export const Two = {
   hidden: { opacity: 0, scale: 0.95 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: { duration: 0.8, ease: "easeOut", delay: 0.2 },
   },
+};
+
+// Animation variants for the container
+export const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+// Animation variants for individual elements
+export const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+    },
+  },
+};
+
+// Image animation
+export const imageTwoVariants = (reverse) => {
+  return {
+    hidden: { opacity: 0, x: reverse ? 100 : -100 },
+    visible: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        duration: 0.8,
+        ease: "easeOut",
+      },
+    },
+  };
 };

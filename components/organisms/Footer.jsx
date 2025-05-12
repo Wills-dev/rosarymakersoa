@@ -1,56 +1,55 @@
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
-import { footerLinks } from "../lib/constants";
+import Logo from "../atoms/Logo";
+
+import { footerLinks } from "../../lib/constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-black">
-      <div className="padding-x">
-        <div className="grid grid-cols-8 gap-10 py-28">
-          <div className=" md:col-span-2 sm:col-span-4 col-span-8">
-            <Link href="/">
-              <Image
-                src="/assets/images/RMOA-Logo.png"
-                width={140}
-                height={80}
-                alt="logo"
-                className=" object-contain"
-              />
-            </Link>
-          </div>
-          <div className="md:col-span-2 sm:col-span-4 col-span-8 flex flex-col gap-6">
-            <h6 className="sm:text-xl text-lg text-white font-light">
-              Contact Info
-            </h6>
-            <ul className="flex flex-col gap-4 text-[#868c98]">
-              <li className="font-light">
-                Rosary Makers of America 2300 West Park Place Blvd., Ste 142
-                Stone Mountain, Georgia 30087
-              </li>
-              <li className="font-light">Telephone. Fax.Text: 678-345-0788</li>
-              <li className="font-light">Email: info@rosarymakersoa.org</li>
-            </ul>
-          </div>
-          {footerLinks?.map((heading) => (
-            <div
-              key={heading?.heading}
-              className="md:col-span-2 sm:col-span-4 col-span-8 flex flex-col gap-6"
-            >
-              <h6 className="sm:text-xl text-lg text-white font-light">
-                {heading?.heading}
-              </h6>
-              <ul className="flex flex-col gap-4 ">
-                {heading?.subLinks?.map((link) => (
-                  <li className="font-light text-[#868c98] hover:text-blue-950 transition-all duration-300 ease-in-out">
-                    <Link href={link?.link}>{link?.title} lies</Link>
-                  </li>
-                ))}
+    <footer className="">
+      <div className="bg-black  padding-y">
+        <div className="padding-y padding-ctn text-gray-300">
+          <div className="grid grid-cols-6 gap-10">
+            <div className="md:col-span-2 sm:col-span-3 col-span-6 space-y-4">
+              <Logo />
+              <ul className="flex flex-col gap-4">
+                <li className="font-light">
+                  Rosary Makers of America 2300 West Park Place Blvd., Ste 142
+                  Stone Mountain, Georgia 30087
+                </li>
+                <li className="font-light">
+                  Telephone. Fax.Text: 678-345-0788
+                </li>
+                <li className="font-light">Email: info@rosarymakersoa.org</li>
               </ul>
             </div>
-          ))}
+            {footerLinks?.map((heading) => (
+              <div
+                key={heading?.heading}
+                className="md:col-span-2 sm:col-span-3 col-span-6 flex flex-col gap-6"
+              >
+                <h6 className="sm:text-xl text-lg  font-medium">
+                  {heading?.heading}
+                </h6>
+                <ul className="flex flex-col gap-4 ">
+                  {heading?.subLinks?.map((link) => (
+                    <li
+                      key={link?.title}
+                      className="font-light hover:text-blue-700 transition-all duration-300 ease-in-out"
+                    >
+                      <Link href={link?.link}>{link?.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="flex sm:items-center justify-between border-t-1 border-[#868c98] py-4 flex-wrap gap-6 max-sm:flex-col-reverse">
+      </div>
+
+      <div className="padding-ctn bg-black">
+        <div className="flex sm:items-center justify-between border-t-1  py-4 flex-wrap gap-6 max-sm:flex-col-reverse">
           <p className="text-[#868c98]">
             Copyright ©2025 All rights reserved | Rosary Markers of America
           </p>
