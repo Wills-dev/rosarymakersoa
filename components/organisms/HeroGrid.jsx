@@ -90,7 +90,7 @@ const HeroGrid = () => {
       initial={{ scale: 0.8, opacity: 0 }}
       animate={isMounted ? { scale: 1, opacity: 1 } : {}}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="grid grid-cols-6 md:gap-6 gap-4"
+      className="grid grid-cols-6 md:gap-6 gap-2"
     >
       <HeroGridItemContainer
         key={gridItems[0].id}
