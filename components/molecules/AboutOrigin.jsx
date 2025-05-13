@@ -6,7 +6,7 @@ const AboutOrigin = () => {
     <section className="padding-y padding-ctn ">
       <PageTitle title="About Us" />
       <div className="max-w-4xl pt-10 space-y-4">
-        <SectionParagraph className="sm:text-xl  text-lg font-light">
+        <SectionParagraph className="sm:text-xl  text-lg ">
           Rosary Makers of America is a 501(c)(3) nonprofit organization founded
           in the United States of America. More than thirty-five percent of our
           healthy special needs people who graduate out of the special need High

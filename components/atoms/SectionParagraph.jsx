@@ -11,7 +11,7 @@ const SectionParagraph = ({ children, className }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.5 }}
-      className={`${className && className}`}
+      className={`${className && className} font-light sm:text-xl  text-lg`}
     >
       {children}
     </motion.p>
