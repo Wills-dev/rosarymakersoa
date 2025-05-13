@@ -6,7 +6,7 @@ import SectionLayout from "../templates/SectionLayout";
 const OurSection = () => {
   return (
     <SectionLayout>
-      <div className="padding-ctn padding-y">
+      <div className="padding-ctn padding-y bg-gray-100">
         <div className="flex gap-6 padding-y flex-wrap">
           {our?.map((our, index) => (
             <OurCard key={index} our={our} />

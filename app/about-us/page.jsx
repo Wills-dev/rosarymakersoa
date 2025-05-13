@@ -1,14 +1,13 @@
 import MainLayout from "../../components/templates/MainLayout";
 import AboutUsMainImage from "../../components/atoms/AboutUsMainImage";
 import AboutUsPageContent from "../../components/organisms/AboutUsPageContent";
-import BoardDirectors from "../../components/organisms/BoardDirectors";
 
 const page = () => {
   return (
     <MainLayout>
       <AboutUsMainImage />
       <AboutUsPageContent />
-      <BoardDirectors />
+
       {/* <section className="bg-cream py-6 w-full">
         <div className="padding-x w-full space-y-6">
           <div className="section-bg text-primary-brown space-y-4">

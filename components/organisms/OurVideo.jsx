@@ -1,6 +1,6 @@
 const OurVideo = () => {
   return (
-    <section className=" bg-black">
+    <section className=" bg-gray-100">
       <div className="padding-y padding-ctn">
         <div className="w-full aspect-video">
           <iframe
