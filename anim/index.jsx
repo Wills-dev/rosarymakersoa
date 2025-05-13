@@ -99,6 +99,24 @@ export const itemVariants = {
   },
 };
 
+export const itemVariants2 = (direction) => ({
+  hidden: {
+    opacity: 0,
+    x: direction === "left" ? -100 : direction === "right" ? 100 : 0,
+    y: direction === "top" ? -100 : direction === "bottom" ? 100 : 0,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    y: 0,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      damping: 20,
+    },
+  },
+});
+
 // Image animation
 
 export const imageVariants = {
