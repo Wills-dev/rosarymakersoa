@@ -1,11 +1,13 @@
-import Image from "next/image";
-
 import MainLayout from "../../components/templates/MainLayout";
+import AboutUsMainImage from "../../components/atoms/AboutUsMainImage";
+import AboutUsPageContent from "../../components/organisms/AboutUsPageContent";
 
 const page = () => {
   return (
     <MainLayout>
-      <section className="bg-cream py-6 w-full">
+      <AboutUsMainImage />
+      <AboutUsPageContent />
+      {/* <section className="bg-cream py-6 w-full">
         <div className="padding-x w-full space-y-6">
           <div className="section-bg text-primary-brown space-y-4">
             <h3 className="sm:text-lg uppercase font-semibold text-primary-black border-b-1">
@@ -296,7 +298,7 @@ const page = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </MainLayout>
   );
 };
