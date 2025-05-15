@@ -10,6 +10,7 @@ const AboutUsMainImage = () => {
           src={MainImage}
           priority
           alt="About us"
+          placeholder="blur"
           className="w-full h-full min-w-full min-h-full object-cover"
         />
       </div>
