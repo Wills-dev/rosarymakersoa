@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
-
 import SectionParagraph from "../atoms/SectionParagraph";
 import SectionSubTitle from "../atoms/SectionSubTitle";
 import SectionTitle from "../atoms/SectionTitle";
 import ShowImage from "./ShowImage";
 
+import IkennaCoke from "../../public/assets/images/RMOA4.jpg";
+import IkennaSiblings from "../../public/assets/images/RMOA2.jpg";
 import IkennaSchool from "../../public/assets/images/Ikena-at-High-School-Graduation.jpg";
 
 const StoryBehindOurStory = () => {
@@ -28,6 +28,16 @@ const StoryBehindOurStory = () => {
             siblings were healthy and their pregnancies were uneventful and
             routine
           </SectionParagraph>
+          <div className="">
+            <ShowImage
+              src={IkennaSiblings}
+              alt="Ikenna with siblings"
+              extraStyle="w-full h-auto"
+            />
+            <h6 className="font-medium text-lg text-center">
+              Ikenna with doting siblings
+            </h6>
+          </div>
         </div>
 
         <SectionSubTitle text="A Routine Prenatal Visit and An Unexpected Intrauterine Diagnosis:" />
@@ -106,32 +116,76 @@ const StoryBehindOurStory = () => {
           rosary making excellence, was born to serve all special need young
           adults (ie young adults with developmental disability).
         </SectionParagraph>
-        <div className="flex gap-10 max-md:flex-col">
-          <SectionParagraph className="max-w-2xl flex-1">
-            The birth of our most beloved son Ikenna Michael Ihenacho was our
-            inspiration for the founding of Rosary Makers of America. It was
-            1996 and I was a pursuing my subspecialty training in nephrology
-            (the study and treatment of kidney diseases) in the beautiful and
-            picturesque town of Albuquerque New Mexico and my wife was working
-            as a staff pharmacist in a local mail order pharmacy when our fifth
-            child, Ikenna was conceived. It was our fourth and last pregnancy.
-            At the third, we were blessed with a pair of twins. His four
-            siblings were healthy and their pregnancies were uneventful and
-            routine
-          </SectionParagraph>
-          <div className="flex-1">
-            {/* hello
-            <Image
-              src={IkennaSchool}
-              alt="Ikenna at graduation"
-              className={`object-cover w-full h-auto`}
-              onClick={() => {}}
-            /> */}
+        <div className="flex md:gap-16 gap-6 max-md:flex-col pt-4">
+          <div className="space-y-4">
+            <SectionParagraph className="max-w-4xl flex-1">
+              At twenty-one he graduated out of a two-year post-secondary school
+              program in our county called Strive and could not proceed any
+              further. Ikenna has grown into a strong, healthy, well-adjusted,
+              kind, gentle and loving young man. He is most beloved by his
+              friends and family. He is a source of great joy to me and my wife.
+              His older siblings love him greatly and are very protective of
+              him. Since he has been making rosary with us in the quiet of our
+              home since he was ten years old, we reasoned this could be his
+              “day job” and would like his peers to join. Hence the Rosary
+              Makers of America, Inc
+            </SectionParagraph>
+            <SectionParagraph className="max-w-4xl flex-1">
+              At twenty-one he graduated out of a two-year post-secondary school
+              program in our county called Strive and could not proceed any
+              further. Ikenna has grown into a strong, healthy, well-adjusted,
+              kind, gentle and loving young man. He is most beloved by his
+              friends and family. He is a source of great joy to me and my wife.
+              His older siblings love him greatly and are very protective of
+              him. Since he has been making rosary with us in the quiet of our
+              home since he was ten years old, we reasoned this could be his
+              “day job” and would like his peers to join. Hence the Rosary
+              Makers of America, Inc
+            </SectionParagraph>
+          </div>
+
+          <div className="">
             <ShowImage
               src={IkennaSchool}
               alt="Ikenna at graduation"
               extraStyle="w-full h-auto"
             />
+            <h6 className="font-medium text-lg text-center">
+              Ikenna at High School Graduation
+            </h6>
+          </div>
+        </div>
+        <div className="flex md:gap-16 gap-6 max-md:flex-col pt-4">
+          <div className="">
+            <ShowImage
+              src={IkennaCoke}
+              alt="Ikenna with dad and mum"
+              extraStyle="w-full h-auto"
+            />
+            <h6 className="font-medium text-lg text-center">
+              An evening with Mum and Dad at the Coca Cola museum Centennial
+              Park, Atlanta, Georgia
+            </h6>
+          </div>
+          <div className="space-y-4">
+            <SectionParagraph className="max-w-4xl flex-1">
+              Spreading the joyful pride and dignity of honest human labor: The
+              Rosary Makers of America is a workplace where our special needs
+              young adults can come and learn to make rosaries of the highest
+              quality. A place to go daily to craft one of the most sacred,
+              powerful and beloved instruments of prayer in Christendom. And in
+              so doing enjoy, like the rest of humanity the beauty and the
+              dignity of honest human labor. Thus, fulfilling man’s singular and
+              most important calling, which is to know his Creator, to love Him,
+              to serve Him and his fellow man in work and to be with Him in
+              eternal bliss in the world to come.
+            </SectionParagraph>
+            <SectionParagraph className="max-w-4xl flex-1">
+              A labor of love that calls for all hands to be on deck: The Rosary
+              Makers of America is a labor of love that calls for all hands to
+              be on deck. Would you lend us yours? Please call us, make a
+              donation, volunteer for us and above all, pray for us.
+            </SectionParagraph>
           </div>
         </div>
       </div>
