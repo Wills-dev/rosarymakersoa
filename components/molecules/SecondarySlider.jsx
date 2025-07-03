@@ -1,14 +1,17 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+
+import { motion } from "framer-motion";
+
 import Image from "next/image";
+import { ourRosaries } from "../../lib/constants";
 
 // Array of 20 image placeholders
-const slides = Array.from({ length: 20 }, (_, index) => ({
-  src: `/images/secondary-slide${index + 1}.jpg`,
-  alt: `Secondary Slide ${index + 1}`,
-}));
+// const ourRosaries? = Array.from({ length: 20 }, (_, index) => ({
+//   src: `/images/secondary-slide${index + 1}.jpg`,
+//   alt: `Secondary Slide ${index + 1}`,
+// }));
 
 const SecondarySlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -17,29 +20,28 @@ const SecondarySlider = () => {
 
   useEffect(() => {
     // Preload all images
-    slides.forEach((slide) => {
+    ourRosaries?.forEach((slide) => {
       const img = new window.Image();
       img.src = slide.src;
     });
 
-    // Disable initial load animation after first render
     const timer = setTimeout(() => {
       setIsInitialLoad(false);
-    }, 1000); // Match animation duration
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
   const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % slides.length);
+    setCurrentIndex((prev) => (prev + 1) % ourRosaries?.length);
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + slides.length) % slides.length);
+    setCurrentIndex(
+      (prev) => (prev - 1 + ourRosaries?.length) % ourRosaries?.length
+    );
   };
 
-  // Calculate visible cards based on screen size
-  const visibleCards = 4; // Adjust based on screen size if needed
-  const cardWidth = 200; // Approximate width in pixels
+  const cardWidth = 200;
   const translateX = -(currentIndex * cardWidth);
 
   return (
@@ -51,7 +53,7 @@ const SecondarySlider = () => {
         transition={{ duration: 0.8, ease: "easeInOut" }}
         className="flex"
       >
-        {slides.map((slide, index) => (
+        {ourRosaries?.map((slide, index) => (
           <motion.div
             key={index}
             className="flex-shrink-0 w-64 h-80 mx-2 bg-black"
@@ -67,6 +69,7 @@ const SecondarySlider = () => {
               alt={slide.alt}
               width={300}
               height={200}
+              className="w-full h-full rounded-2xl"
               style={{ objectFit: "cover" }}
               priority={index === 0}
               loading={index === 0 ? "eager" : "lazy"}
