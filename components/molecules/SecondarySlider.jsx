@@ -5,15 +5,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 
 import Image from "next/image";
-import { ourRosaries } from "../../lib/constants";
 
-// Array of 20 image placeholders
-// const ourRosaries? = Array.from({ length: 20 }, (_, index) => ({
-//   src: `/images/secondary-slide${index + 1}.jpg`,
-//   alt: `Secondary Slide ${index + 1}`,
-// }));
-
-const SecondarySlider = () => {
+const SecondarySlider = ({ ourRosaries }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isInitialLoad, setIsInitialLoad] = useState(true);
   const sliderRef = useRef(null);
