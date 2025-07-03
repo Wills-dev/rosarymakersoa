@@ -1,3 +1,5 @@
+import { ourRosaries } from "../../lib/constants";
+
 import SectionTitle from "../atoms/SectionTitle";
 import SecondarySlider from "../molecules/SecondarySlider";
 
@@ -8,7 +10,7 @@ const SampleOurWork = () => {
         <SectionTitle title=" Samples of Our Work" />
       </div>
       <div className="padding-y">
-        <SecondarySlider />
+        <SecondarySlider ourRosaries={ourRosaries} />
       </div>
     </section>
   );
