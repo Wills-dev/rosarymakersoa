@@ -1,3 +1,4 @@
+import Footer from "../organisms/Footer";
 import Nav from "../organisms/Nav";
 
 const MainLayout = ({ children }) => {
@@ -5,6 +6,7 @@ const MainLayout = ({ children }) => {
     <div className="relative">
       <Nav />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 };

@@ -17,6 +17,10 @@ import Rosary16 from "/public/assets/images/rosary16.jpg";
 import Rosary17 from "/public/assets/images/rosary17.jpg";
 import Rosary18 from "/public/assets/images/rosary18.jpg";
 
+import Makrkers from "/public/assets/images/participate/markers.jpg";
+import Volunteer from "/public/assets/images/participate/volunteer.jpg";
+import Instructor from "/public/assets/images/participate/instructor.JPG";
+
 export const whatWeDo = [
   {
     caption: " Crafting Rosaries",
@@ -85,6 +89,27 @@ export const whatWeDo = [
         />
       </svg>
     ),
+  },
+];
+
+export const participate = [
+  {
+    caption: "Rosary Makers",
+    image: Makrkers,
+    description:
+      "Craft handmade rosaries to support spiritual devotion and community outreach.",
+  },
+  {
+    caption: "Arts & Crafts Instructors",
+    image: Instructor,
+    description:
+      "Teach rosary-making techniques and inspire creativity in workshops.",
+  },
+  {
+    caption: "Volunteers",
+    image: Volunteer,
+    description:
+      "Assist with events, packaging, and distribution of rosaries to those in need.",
   },
 ];
 

@@ -6,7 +6,6 @@ import OurVideo from "../components//organisms/OurVideo";
 import OurArticle from "../components//organisms/OurArticle";
 import JoinUsSection from "../components//organisms/JoinUsSection";
 import DonateSection from "../components//organisms/DonateSection";
-import Footer from "../components//organisms/Footer";
 
 const page = () => {
   return (
@@ -18,7 +17,6 @@ const page = () => {
       <OurArticle />
       <JoinUsSection />
       <DonateSection />
-      <Footer />
     </MainLayout>
   );
 };
