@@ -113,6 +113,98 @@ export const participate = [
   },
 ];
 
+export const benefitsOfRosary = [
+  {
+    id: 1,
+    promise:
+      "Whoever shall faithfully serve me by the recitation of the Rosary, shall receive powerful graces.",
+    animate: "up",
+  },
+  {
+    " animate": "down",
+    id: 2,
+    promise:
+      "I promise my special protection and the greatest graces to all those who shall recite the Rosary.",
+  },
+  {
+    " animate": "left",
+    id: 3,
+    promise:
+      "The Rosary shall be a powerful armor against hell, it will destroy vice, decrease sin, and defeat heresies.",
+  },
+  {
+    " animate": "right",
+    id: 4,
+    promise:
+      "It will cause virtue and good works to flourish; it will obtain for souls the abundant mercy of God; it will withdraw the hearts of people from the love of the world and its vanities, and will lift them to the desire of eternal things. Oh, that souls would sanctify themselves by this means.",
+  },
+  {
+    " animate": "up",
+    id: 5,
+    promise:
+      "The soul which recommends itself to me by the recitation of the Rosary, shall not perish.",
+  },
+  {
+    " animate": "down",
+    id: 6,
+    promise:
+      "Whoever shall recite the Rosary devoutly, applying Himself to the consideration of its Sacred Mysteries shall never be conquered by misfortune. God will not chastise Him in His justice, he shall not perish by an unprovided death; if he be just, he shall remain in the grace of God, and become worthy of eternal life.",
+  },
+  {
+    " animate": "left",
+    id: 7,
+    promise:
+      "Whoever shall have a true devotion for the Rosary shall not die without the Sacraments of the Church.",
+  },
+  {
+    " animate": "right",
+    id: 8,
+    promise:
+      "Those who are faithful to recite the Rosary shall have during their life and at their death the light of God and the plentitude of His graces; at the moment of death they shall participate in the merits of the Saints in Paradise.",
+  },
+  {
+    " animate": "up",
+    id: 9,
+    promise:
+      "I shall deliver from purgatory those who have been devoted to the Rosary.",
+  },
+  {
+    " animate": "down",
+    id: 10,
+    promise:
+      "The faithful children of the Rosary shall merit a high degree of glory in Heaven.",
+  },
+  {
+    " animate": "left",
+    id: 11,
+    promise:
+      "You shall obtain all you ask of me by the recitation of the Rosary.",
+  },
+  {
+    " animate": "right",
+    id: 12,
+    promise:
+      "All those who propagate the Holy Rosary shall be aided by me in their necessities.",
+  },
+  {
+    " animate": "up",
+    id: 13,
+    promise:
+      "I have obtained from my Divine Son that all the advocates of the Rosary shall have for intercessors the entire celestial court during their life and at the hour of death.",
+  },
+  {
+    " animate": "down",
+    id: 14,
+    promise:
+      "All who recite the Rosary are my children, and brothers and sisters of my only Son, Jesus Christ.",
+  },
+  {
+    " animate": "left",
+    id: 15,
+    promise: "Devotion of my Rosary is a great sign of predestination.",
+  },
+];
+
 export const rosaries = [
   Rosary1,
   Rosary10,
