@@ -1,3 +1,4 @@
+import DonateButton from "../../components/atoms/DonateButton";
 import PageTitle from "../../components/atoms/PageTitle";
 import SectionParagraph from "../../components/atoms/SectionParagraph";
 import MainLayout from "../../components/templates/MainLayout";
@@ -26,6 +27,7 @@ const MakeDonation = () => {
               Donating to a Catholic Appeal or Church? Consider a tax-deductible
               donation to support us!
             </SectionParagraph>
+            <DonateButton />
           </div>
         </div>
       </section>

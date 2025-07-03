@@ -26,7 +26,8 @@
     "app/about-us/page.jsx",
     "lib/constants/routes.js",
     "lib/hooks/useNavbarScroll.js",
-    "components/atoms/Logo.jsx"
+    "components/atoms/Logo.jsx",
+    "components/atoms/DonateButton.jsx"
   ],
   "exclude": ["node_modules"]
 }
