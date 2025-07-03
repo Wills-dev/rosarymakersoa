@@ -9,7 +9,7 @@ const NavLink = ({ href, children }) => {
 
   return (
     <div className="relative group">
-      <Link href={href} className={`font-medium text-sm uppercase text-white`}>
+      <Link href={href} className={`font-light text-sm uppercase text-white`}>
         {children}
       </Link>
 
