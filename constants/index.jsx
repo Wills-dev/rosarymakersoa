@@ -17,6 +17,17 @@ import Rosary16 from "/public/assets/images/rosary16.jpg";
 import Rosary17 from "/public/assets/images/rosary17.jpg";
 import Rosary18 from "/public/assets/images/rosary18.jpg";
 
+// import Rose1 from "/public/assets/images/rosary/10.jpg";
+// import Rose2 from "/public/assets/images/rosary/13.jpg";
+// import Rose3 from "/public/assets/images/rosary/14.jpg";
+// import Rose4 from "/public/assets/images/rosary/19.jpg";
+// import Rose5 from "/public/assets/images/rosary/28.jpg";
+// import Rose6 from "/public/assets/images/rosary/32.jpg";
+// import Rose7 from "/public/assets/images/rosary/34.jpg";
+// import Rose8 from "/public/assets/images/rosary/35.jpg";
+// import Rose9 from "/public/assets/images/rosary/6.jpg";
+// import Rose0 from "/public/assets/images/rosary/9.jpg";
+
 import Makrkers from "/public/assets/images/participate/markers.jpg";
 import Volunteer from "/public/assets/images/participate/volunteer.jpg";
 import Instructor from "/public/assets/images/participate/instructor.JPG";
@@ -202,6 +213,59 @@ export const benefitsOfRosary = [
     " animate": "left",
     id: 15,
     promise: "Devotion of my Rosary is a great sign of predestination.",
+  },
+];
+
+export const rosaryBenefits = [
+  {
+    id: 1,
+    benefit: "Sinners are forgiven.",
+    image: "/assets/images/rosary/10.jpg",
+  },
+  {
+    id: 2,
+    benefit: "Souls that thirst are refreshed.",
+    image: "/assets/images/rosary/13.jpg",
+  },
+  {
+    id: 3,
+    benefit: "Those who are fettered have their bonds broken.",
+    image: "/assets/images/rosary/14.jpg",
+  },
+  {
+    id: 4,
+    benefit: "Those who weep find happiness.",
+    image: "/assets/images/rosary/19.jpg",
+  },
+  {
+    id: 5,
+    benefit: "Those who are tempted find peace.",
+    image: "/assets/images/rosary/28.jpg",
+  },
+  {
+    id: 6,
+    benefit: "The poor find help.",
+    image: "/assets/images/rosary/32.jpg",
+  },
+  {
+    id: 7,
+    benefit: "Religious are reformed.",
+    image: "/assets/images/rosary/34.jpg",
+  },
+  {
+    id: 8,
+    benefit: "Those who are ignorant are instructed.",
+    image: "/assets/images/rosary/35.jpg",
+  },
+  {
+    id: 9,
+    benefit: "The living learn to overcome pride.",
+    image: "/assets/images/rosary/6.jpg",
+  },
+  {
+    id: 10,
+    benefit: "The dead (the Holy Souls) have their pains eased by suffrages.",
+    image: "/assets/images/rosary/9.jpg",
   },
 ];
 
