@@ -5,6 +5,7 @@ import SectionLayout from "../templates/SectionLayout";
 import AnimatedImage from "../molecules/AnimatedImage";
 
 const AboutSection = () => {
+  //
   return (
     <div className="">
       <AnimatedImage img={bgImg} />
