@@ -1,7 +1,6 @@
 "use client";
 
 import AnimatedImage from "../molecules/AnimatedImage";
-import bgImg from "/public/assets/images/join-us.JPG";
 import SectionTitle from "../atoms/SectionTitle";
 import CustomButton from "../atoms/CustomButton";
 import SectionLayout from "../templates/SectionLayout";
@@ -12,7 +11,7 @@ import { ROUTES } from "../../lib/constants/routes";
 const JoinUsSection = ({ reverse = true }) => {
   return (
     <div className="">
-      <AnimatedImage img={bgImg} />
+      <AnimatedImage img="/assets/images/join-us.JPG" />
       <SectionLayout className="">
         <div className="padding-y padding-ctn">
           <div className="flex md:gap-16 gap-10 md:items-center max-md:flex-col">
@@ -35,22 +34,6 @@ const JoinUsSection = ({ reverse = true }) => {
                 <CustomButton text="Join Us" href={ROUTES?.JOIN_US} />
               </div>
             </div>
-            {/* <motion.div
-            variants={imageTwoVariants(reverse)}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            className="flex-1 w-full"
-          >
-            <Image
-              alt="about-us"
-              src="/assets/images/join-us.JPG"
-              width={400}
-              height={600}
-              priority
-              className="object-cover h-auto w-full"
-            />
-          </motion.div> */}
           </div>
         </div>
       </SectionLayout>

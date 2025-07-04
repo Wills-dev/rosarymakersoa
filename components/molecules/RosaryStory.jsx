@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import bgImg from "/public/assets/images/animatedBg.jpg";
-
 import SectionTitle from "../atoms/SectionTitle";
 import SectionSubTitle from "../atoms/SectionSubTitle";
 import SectionParagraph from "../atoms/SectionParagraph";
@@ -83,7 +81,7 @@ const RosaryStory = () => {
           </div>
         </div>
       </div>
-      <AnimatedImage img={bgImg} />
+      <AnimatedImage img="/assets/images/animatedBg.jpg" />
       <div className="padding-y padding-ctn">
         <div className="space-y-4 max-w-4xl pt-10">
           <SectionParagraph className="">
