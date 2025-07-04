@@ -15,15 +15,15 @@ const OurArticle = ({ reverse = false }) => {
     <SectionLayout>
       <div className="padding-y padding-ctn">
         <div className="flex md:items-center max-md:flex-col">
-          <motion.div
+          {/* <motion.div
             variants={imageTwoVariants(reverse)}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
             className="flex-1"
-          ></motion.div>
+          ></motion.div> */}
 
-          <div className="max-w-2xl w-full space-y-4">
+          <div className="max-w-6xl w-full space-y-4">
             <SectionTitle title="Art, Prayer & Companionship Goals of Rosary Makers" />
             <SectionSubTitle text="By ANDREW NELSON, Staff Writer|Published February 3, 2022" />
             <div className="space-y-4 sm:text-lg pt-6">
