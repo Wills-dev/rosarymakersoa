@@ -9,12 +9,13 @@ import SectionParagraph from "../atoms/SectionParagraph";
 
 import { ROUTES } from "../../lib/constants/routes";
 import { imageTwoVariants } from "../../anim";
+import Image from "next/image";
 
 const JoinUsSection = ({ reverse = true }) => {
   return (
     <SectionLayout className="">
       <div className="padding-y padding-ctn">
-        <div className="flex md:items-center max-md:flex-col">
+        <div className="flex md:gap-16 gap-10 md:items-center max-md:flex-col">
           <div className="max-w-xl w-full space-y-4">
             <SectionTitle title="Join us" />
 
@@ -39,8 +40,17 @@ const JoinUsSection = ({ reverse = true }) => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.5 }}
-            className="flex-1"
-          ></motion.div>
+            className="flex-1 w-full"
+          >
+            <Image
+              alt="about-us"
+              src="/assets/images/join-us.JPG"
+              width={400}
+              height={600}
+              priority
+              className="object-cover h-auto w-full"
+            />
+          </motion.div>
         </div>
       </div>
     </SectionLayout>

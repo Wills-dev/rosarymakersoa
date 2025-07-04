@@ -19,6 +19,7 @@ const HeroGrid = () => {
       hoverColor: "bg-blue-700",
       text: "Innovation",
       animation: "down",
+      src: "/assets/images/ourMakers/maker0.jpg",
     },
     {
       id: 2,
@@ -26,6 +27,7 @@ const HeroGrid = () => {
       hoverColor: "bg-green-700",
       text: "Creativity",
       animation: "up",
+      src: "/assets/images/rosary/35.jpg",
     },
     {
       id: 3,
@@ -33,6 +35,7 @@ const HeroGrid = () => {
       hoverColor: "bg-red-700",
       text: "Technology",
       animation: "left",
+      src: "/assets/images/ourMakers/maker1.jpg",
     },
     {
       id: 4,
@@ -40,6 +43,7 @@ const HeroGrid = () => {
       hoverColor: "bg-yellow-700",
       text: "Future",
       animation: "right",
+      src: "/assets/images/ourMakers/maker5.jpg",
     },
     {
       id: 5,
@@ -47,6 +51,7 @@ const HeroGrid = () => {
       hoverColor: "bg-purple-700",
       text: "Discovery",
       animation: "up",
+      src: "/assets/images/rosary/32.jpg",
     },
     {
       id: 6,
@@ -54,6 +59,7 @@ const HeroGrid = () => {
       hoverColor: "bg-zinc-700",
       text: "Discovery",
       animation: "up",
+      src: "/assets/images/ourMakers/maker6.jpg",
     },
     {
       id: 7,
@@ -61,6 +67,7 @@ const HeroGrid = () => {
       hoverColor: "bg-slate-700",
       text: "Discovery",
       animation: "up",
+      src: "/assets/images/rosary/19.jpg",
     },
     {
       id: 8,
@@ -68,6 +75,7 @@ const HeroGrid = () => {
       hoverColor: "bg-purple-700",
       text: "Discovery",
       animation: "up",
+      src: "/assets/images/ourMakers/maker7.jpg",
     },
     {
       id: 9,
@@ -75,6 +83,7 @@ const HeroGrid = () => {
       hoverColor: "bg-purple-700",
       text: "Discovery",
       animation: "up",
+      src: "/assets/images/ourMakers/maker8.jpg",
     },
     {
       id: 10,
@@ -82,6 +91,7 @@ const HeroGrid = () => {
       hoverColor: "bg-purple-700",
       text: "Discovery",
       animation: "up",
+      src: "/assets/images/rosary/9.jpg",
     },
   ];
 
@@ -98,6 +108,7 @@ const HeroGrid = () => {
         hoverColor={gridItems[0].hoverColor}
         text={gridItems[0].text}
         animationVariant={gridItems[0].animation}
+        src={gridItems[0].src}
         className="col-start-5 col-span-2 lg:col-start-6 lg:col-span-1"
       />
       <HeroGridItemContainer
@@ -106,6 +117,7 @@ const HeroGrid = () => {
         hoverColor={gridItems[1].hoverColor}
         text={gridItems[1].text}
         animationVariant={gridItems[1].animation}
+        src={gridItems[1].src}
         className=" col-span-2 lg:col-start-4 lg:col-span-1"
       />
       {gridItems.slice(2).map((item) => (
@@ -115,6 +127,7 @@ const HeroGrid = () => {
           hoverColor={item.hoverColor}
           text={item.text}
           animationVariant={item.animation}
+          src={item.src}
           className="col-span-2 lg:col-span-1"
         />
       ))}

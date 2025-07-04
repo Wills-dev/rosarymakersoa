@@ -3,6 +3,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 
 import HeroGridItem from "../atoms/HeroGridItem";
+import Image from "next/image";
 
 const HeroGridItemContainer = ({
   color,
@@ -10,6 +11,7 @@ const HeroGridItemContainer = ({
   text,
   className,
   animationVariant,
+  src,
 }) => {
   const variants = {
     hidden: {
@@ -47,9 +49,17 @@ const HeroGridItemContainer = ({
           transition={{ duration: 0.3 }}
           className="absolute inset-0 flex items-center justify-center text-white text-xl font-bold"
         >
-          <span className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
+          <Image
+            alt="about-us"
+            src={src}
+            width={400}
+            height={600}
+            priority
+            className="object-cover h-full w-full"
+          />
+          {/* <span className="opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
             {text}
-          </span>
+          </span> */}
         </motion.div>
       </AnimatePresence>
     </motion.div>
