@@ -3,11 +3,9 @@
 import SectionParagraph from "../atoms/SectionParagraph";
 import SectionSubTitle from "../atoms/SectionSubTitle";
 import SectionTitle from "../atoms/SectionTitle";
-import ShowImage from "./ShowImage";
 
-import IkennaCoke from "../../public/assets/images/RMOA4.jpg";
-import IkennaSiblings from "../../public/assets/images/RMOA2.jpg";
-import IkennaSchool from "../../public/assets/images/Ikena-at-High-School-Graduation.jpg";
+import ImageSlider from "./ImageSlider";
+import { ikenna } from "../../lib/constants";
 
 const StoryBehindOurStory = () => {
   return (
@@ -16,7 +14,7 @@ const StoryBehindOurStory = () => {
         <SectionTitle title="The Story Behind Our Story" />
         <SectionSubTitle text="The Inspiration:" />
         <div className="flex gap-10 max-md:flex-col">
-          <SectionParagraph className="max-w-2xl">
+          <SectionParagraph className="max-w-5xl">
             The birth of our most beloved son Ikenna Michael Ihenacho was our
             inspiration for the founding of Rosary Makers of America. It was
             1996 and I was a pursuing my subspecialty training in nephrology
@@ -28,18 +26,10 @@ const StoryBehindOurStory = () => {
             siblings were healthy and their pregnancies were uneventful and
             routine
           </SectionParagraph>
-          <div className="">
-            <ShowImage
-              src={IkennaSiblings}
-              alt="Ikenna with siblings"
-              extraStyle="w-full h-auto"
-            />
-            <h6 className="font-medium text-lg text-center">
-              Ikenna with doting siblings
-            </h6>
-          </div>
         </div>
-
+        <div className="pt-10">
+          <ImageSlider slider={ikenna} />
+        </div>
         <SectionSubTitle text="A Routine Prenatal Visit and An Unexpected Intrauterine Diagnosis:" />
         <SectionParagraph className="">
           My wife had gone for one of her routine prenatal visits with her
@@ -118,7 +108,7 @@ const StoryBehindOurStory = () => {
         </SectionParagraph>
         <div className="flex md:gap-16 gap-6 max-md:flex-col pt-4">
           <div className="space-y-4">
-            <SectionParagraph className="max-w-4xl flex-1">
+            <SectionParagraph className="max-w-6xl flex-1">
               At twenty-one he graduated out of a two-year post-secondary school
               program in our county called Strive and could not proceed any
               further. Ikenna has grown into a strong, healthy, well-adjusted,
@@ -130,7 +120,7 @@ const StoryBehindOurStory = () => {
               “day job” and would like his peers to join. Hence the Rosary
               Makers of America, Inc
             </SectionParagraph>
-            <SectionParagraph className="max-w-4xl flex-1">
+            <SectionParagraph className="max-w-6xl flex-1">
               At twenty-one he graduated out of a two-year post-secondary school
               program in our county called Strive and could not proceed any
               further. Ikenna has grown into a strong, healthy, well-adjusted,
@@ -142,33 +132,11 @@ const StoryBehindOurStory = () => {
               “day job” and would like his peers to join. Hence the Rosary
               Makers of America, Inc
             </SectionParagraph>
-          </div>
-
-          <div className="">
-            <ShowImage
-              src={IkennaSchool}
-              alt="Ikenna at graduation"
-              extraStyle="w-full h-auto"
-            />
-            <h6 className="font-medium text-lg text-center">
-              Ikenna at High School Graduation
-            </h6>
           </div>
         </div>
         <div className="flex md:gap-16 gap-6 max-md:flex-col pt-4">
-          <div className="">
-            <ShowImage
-              src={IkennaCoke}
-              alt="Ikenna with dad and mum"
-              extraStyle="w-full h-auto"
-            />
-            <h6 className="font-medium text-lg text-center">
-              An evening with Mum and Dad at the Coca Cola museum Centennial
-              Park, Atlanta, Georgia
-            </h6>
-          </div>
           <div className="space-y-4">
-            <SectionParagraph className="max-w-4xl flex-1">
+            <SectionParagraph className="max-w-6xl flex-1">
               Spreading the joyful pride and dignity of honest human labor: The
               Rosary Makers of America is a workplace where our special needs
               young adults can come and learn to make rosaries of the highest
@@ -180,7 +148,7 @@ const StoryBehindOurStory = () => {
               to serve Him and his fellow man in work and to be with Him in
               eternal bliss in the world to come.
             </SectionParagraph>
-            <SectionParagraph className="max-w-4xl flex-1">
+            <SectionParagraph className="max-w-6xl flex-1">
               A labor of love that calls for all hands to be on deck: The Rosary
               Makers of America is a labor of love that calls for all hands to
               be on deck. Would you lend us yours? Please call us, make a
