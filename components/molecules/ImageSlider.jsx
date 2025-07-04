@@ -5,24 +5,22 @@ import Image from "next/image";
 
 import { motion, AnimatePresence } from "framer-motion";
 
-import { ourMakers } from "../../lib/constants";
-
-const ImageSlider = () => {
+const ImageSlider = ({ slider }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
-    ourMakers.forEach((slide) => {
+    slider.forEach((slide) => {
       const img = new window.Image();
       img.src = slide.src;
     });
   }, []);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % ourMakers.length);
+    setCurrentSlide((prev) => (prev + 1) % slider.length);
   };
 
   const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + ourMakers.length) % ourMakers.length);
+    setCurrentSlide((prev) => (prev - 1 + slider.length) % slider.length);
   };
 
   return (
@@ -38,8 +36,8 @@ const ImageSlider = () => {
             className="absolute inset-0"
           >
             <Image
-              src={ourMakers[currentSlide].src}
-              alt={ourMakers[currentSlide].alt}
+              src={slider[currentSlide].src}
+              alt={slider[currentSlide].alt}
               fill
               style={{ objectFit: "cover" }}
               priority={currentSlide === 0}
@@ -100,7 +98,7 @@ const ImageSlider = () => {
         transition={{ delay: 0.2, duration: 0.5 }}
         className="text-gray-600 text-sm drop-shadow-lg p-2"
       >
-        {ourMakers[currentSlide].caption}
+        {slider[currentSlide].caption}
       </motion.p>
     </section>
   );

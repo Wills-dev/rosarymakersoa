@@ -6,6 +6,7 @@ import ImageSlider from "../molecules/ImageSlider";
 import SampleOurWork from "./SampleOurWork";
 
 import { ROUTES } from "../../lib/constants/routes";
+import { ourMakers } from "../../lib/constants";
 
 const RosaryMakersWrapper = () => {
   return (
@@ -27,7 +28,7 @@ const RosaryMakersWrapper = () => {
           </SectionParagraph>
         </section>
       </div>
-      <ImageSlider />
+      <ImageSlider slider={ourMakers} />
       <SampleOurWork />
     </div>
   );
